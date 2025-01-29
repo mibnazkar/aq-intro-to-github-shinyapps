@@ -1,0 +1,5 @@
+---
+title: "Practice Area"
+---
+
+This is the practice area we will use for making PRs, commits, and changes collaboratively.

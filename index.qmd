@@ -1,0 +1,48 @@
+---
+title: "Workshop Series: GitHub, GitHub Actions (with Quarto) and ShinyApps.io"
+---
+
+## Course Outline
+
+
+### Preparation and installation instructions
+
+**Learning Objective:** Set up GitHub account and ensure the tools we need are working on your machine  
+**Instructions:** [Preparation and installation instructions](./preparation/)  
+**External Resources:**  
+
+- BC Stats: [Introduction to Version Control with Git & GitHub > BCGov GitHub Organization](https://bcgov.github.io/ds-intro-to-git/materials/01-what-is-vc.html)
+- BC Developer Guide: [BC Government organizations in GitHub](https://dev.developer.gov.bc.ca/docs/default/component/bc-developer-guide/use-github-in-bcgov/bc-government-organizations-in-github/)
+
+### Workshop 1. GitHub Collaboration Workflows
+
+**Learning Objective:**  Practice key steps for remote code hosting and collaborating in GitHub by using branches, opening pull requests (PRs), reviewing PRs, and merging changes   
+**Instructions:** [GitHub Collaboration Workflows](01-github-collaboration-workflows.qmd)    
+**External Resources:**  
+
+- BC Stats: [Introduction to Version Control with Git & GitHub > Remote Code Hosting and GitHub](https://bcgov.github.io/ds-intro-to-git/materials/03-remote-hosting.html)
+- Software Carpentry: [Version Control with Git](https://swcarpentry.github.io/git-novice/) (specific sections)
+
+
+### Workshop 2. GitHub Pages and Actions
+
+_More soon_
+
+
+### Workshop 3. ShinyApps.io
+
+_More soon_
+
+---
+
+## Acknowledgements
+
+This instruction material is sourced and adapted from two places:
+
+1. The BCGov "Workshop: Introduction To Version Control With Git and GitHub" Copyright © Province of British Columbia and made available under the Creative Commons Attribution 4.0 International licence.
+
+    <https://github.com/bcgov/ds-intro-to-git>
+
+2. The Software Carpentry Foundation (now The Carpenties). All Software Carpentry, Data Carpentry, and Library Carpentry instructional material is Copyright © Software Carpentry and made available under the Creative Commons Attribution licence.
+
+    > Daisie Huang and Ivan Gonzalez (eds): Software Carpentry: Version Control with Git. Version 2016.06, June 2016, <https://github.com/swcarpentry/git-novice>, 10.5281/zenodo.57467.

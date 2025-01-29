@@ -1,0 +1,28 @@
+---
+title: "GitHub Collaboration Workflows"
+---
+
+## Welcome & Setup Check (10 mins)
+
+
+
+#### **Activity**: 
+
+
+## Refresher on key concepts with version control  (10 mins)
+
+
+#### **Activity**: Make your own copy of a repo (clone) 
+
+
+## Tracking changes (20 mins)
+
+
+#### **Activity**: Make a change to this site (commit)
+
+
+## Collaboration on GitHub (20 mins)
+
+
+#### **Activity**: Push your change back to the main site (push and pull request)
+

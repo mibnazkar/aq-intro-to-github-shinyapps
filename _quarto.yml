@@ -1,0 +1,32 @@
+project:
+  type: website
+
+website:
+  title: "Intro to GitHub and ShinyApps.io"
+  navbar:
+    search: true
+  sidebar:
+    contents:
+      - text: "Workshop Outline"
+        href: index.qmd
+      - text: "Workshop 1. GitHub Collaboration Workflows"  
+        href: 01-github-collaboration-workflows.qmd        
+      - section: "Resources"
+        contents:
+        - text: "Preparation and installation instructions"
+          href: ./preparation/
+        - text: "Markdown Reference"
+          href: ./preparation/markdown-reference.qmd
+      - text: "Practice"
+        href: ./practice/        
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+

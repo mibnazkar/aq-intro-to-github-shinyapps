@@ -1,0 +1,116 @@
+---
+title: "Preparation and installation instructions"
+---
+
+# GitHub 
+
+GitHub is a proprietary developer platform that allows developers to create, store, manage, and share their code. It uses Git to provide distributed version control and GitHub itself provides access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. ([source](https://en.wikipedia.org/w/index.php?title=GitHub&oldid=1270409113))
+
+## Create your GitHub Account
+
+As part of this workshop we will be connecting and pushing some sample code to GitHub, therefore you'll need to create a GitHub account.
+
+1.  Go to <https://github.com> and click "Sign up" at the top-right of the window.
+    -   Note that if this is new it should probably be with your government email 
+    -   Some people use a personal GitHub account, that is just fine! There are new single sign-on requirements so your IDIR must be linked to your account to be in the `bcgov` and `bcgov-c` GitHub organizations, which you can set up after creating your account.
+2.  Follow the step-by-step instructions to create an account.
+3.  Verify your email address with GitHub.
+
+Optional reading: [Configuring your GitHub account](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account#part-1-configuring-your-github-account)
+
+## Add yourself to `bcgov`and `bcgov-c`
+
+You will need to have any two-factor devices, and personal GitHub login and IDIR login ready.
+
+1. Log into GitHub with your personal login. 
+2. Follow [the instructions in the BC Developer Guide](https://dev.developer.gov.bc.ca/docs/default/component/bc-developer-guide/use-github-in-bcgov/bc-government-organizations-in-github/)!
+
+
+
+# GitHub Desktop
+
+GitHub Desktop is a free, open source application that helps you to work with code hosted on GitHub. With GitHub Desktop, you can perform Git commands, such as committing and pushing changes, in a graphical user interface, rather than using the command line. ([source](https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop))
+
+#### Windows and MacOS
+
+1. Download the latest release and install it <https://desktop.github.com/download/> 
+2. [Authenticate yourself](https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop#part-1-installing-and-authenticating) (this requires an account), from File > Options > Accounts. 
+
+#### Linux
+
+There is no official support, you can use git from the command line or install one of the git graphical clients if you would prefer.
+
+
+# Git (and GitBash)
+
+Git is a set of command line utility programs that are designed to execute on a *Unix style command-line environment*. Linux and MacOS both include built-in Unix command line terminals. Most likely you are working on a Windows operating system and will require Git Bash, an application for Windows environments which provides an emulation layer for a Git command line experience.
+
+#### Windows
+
+1.  Search for "Git Bash" in your start menu to check if Git/GitBash are already installed on your computer.
+2.  If Git/GitBash are not installed, navigate to [Git for Windows](https://git-scm.com/download/win) and click "Click here to download" to download the latest 64-bit version of Git for Windows software. This software includes GitBash
+3.  After the download is complete, double click on it to run the installer. The Git Setup wizard will appear. Follow the on-screen prompts by clicking "Next" and "Finish" to complete the installation.  The default options are suitable for most users with the following exceptions:
+    - Select Notepad++, Notepad or Wordpad to use as your default editor.
+    - Adjust the name of the initial branch in new repositories.  Override the default to use “main” instead of “master”.  
+
+
+#### MacOS
+
+Please visit: [Installing Git](https://www.atlassian.com/git/tutorials/install-git) and follow the instructions for installing git for MacOSX.
+
+#### Linux
+
+We will assume you know how to install and set this up.
+
+
+## Configure Git
+
+### Git Set Up
+
+When we use Git on a new computer for the first time, we need to configure a few things. Below are a few examples of configurations we will set as we get started with Git:
+
+-   our name and email address
+-   and that we want to use these settings globally (i.e. for every project).
+
+On a command line, Git commands are written as `git verb options`, where `verb` is what we actually want to do and `options` is additional optional information which may be needed for the `verb`.
+
+### Set user.name & user.email
+
+In this workshop, we'll be working with [GitHub](https://github.com/), and it's important to ensure that the name and email address you configure on your local computer matches the one associated with your GitHub account. For most participants, this will be your government email address.
+
+Below is an example configuration that we will use to connect your local git instance with GitHub. 
+
+For Windows users, these will be typed into a `Git Bash` terminal (search for `Git Bash` from the search bar to open a new window). For Mac users, these will be typed into the `Terminal`.
+
+``` bash
+$ git config --global user.name "your GitHub account name" 
+$ git config --global user.email "your_email@gmail.com"
+```
+
+If you are concerned about privacy, please review [GitHub's instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/).
+
+### Check Global Settings
+
+The two commands we just ran only need to be run once. The flag `--global` tells Git to use the settings for every project on this computer.
+
+You can check your settings at any time with:
+
+``` bash
+$ git config --list
+```
+
+You can change your configuration as many times as you want: use the same commands to update your name or email address.
+
+### Access Git Help and Manual
+
+If you forget a `git` command, you can access a list of available commands by appending a `-h`. You can access the Git manual for a command by appending `--help` :
+
+``` bash
+$ git config -h
+$ git config --help
+```
+
+While viewing the manual, you may see `:` near the cursor at the bottom of the screen.  This is a prompt waiting for further commands such as <kbd>Q</kbd>, which you can use to exit the manual.
+
+
+
