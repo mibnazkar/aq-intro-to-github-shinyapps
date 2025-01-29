@@ -1,35 +1,5 @@
 [
   {
-    "objectID": "01-github-collaboration-workflows.html#refresher-on-key-concepts-with-version-control-10-mins",
-    "href": "01-github-collaboration-workflows.html#refresher-on-key-concepts-with-version-control-10-mins",
-    "title": "GitHub Collaboration Workflows",
-    "section": "Refresher on key concepts with version control (10 mins)",
-    "text": "Refresher on key concepts with version control (10 mins)\n\nActivity: Make your own copy of a repo (clone)",
-    "crumbs": [
-      "Workshop 1. GitHub Collaboration Workflows"
-    ]
-  },
-  {
-    "objectID": "01-github-collaboration-workflows.html#tracking-changes-20-mins",
-    "href": "01-github-collaboration-workflows.html#tracking-changes-20-mins",
-    "title": "GitHub Collaboration Workflows",
-    "section": "Tracking changes (20 mins)",
-    "text": "Tracking changes (20 mins)\n\nActivity: Make a change to this site (commit)",
-    "crumbs": [
-      "Workshop 1. GitHub Collaboration Workflows"
-    ]
-  },
-  {
-    "objectID": "01-github-collaboration-workflows.html#collaboration-on-github-20-mins",
-    "href": "01-github-collaboration-workflows.html#collaboration-on-github-20-mins",
-    "title": "GitHub Collaboration Workflows",
-    "section": "Collaboration on GitHub (20 mins)",
-    "text": "Collaboration on GitHub (20 mins)\n\nActivity: Push your change back to the main site (push and pull request)",
-    "crumbs": [
-      "Workshop 1. GitHub Collaboration Workflows"
-    ]
-  },
-  {
     "objectID": "preparation/markdown-reference.html",
     "href": "preparation/markdown-reference.html",
     "title": "Markdown Reference",
@@ -236,5 +206,35 @@
     "title": "Preparation and installation instructions",
     "section": "Configure Git",
     "text": "Configure Git\n\nGit Set Up\nWhen we use Git on a new computer for the first time, we need to configure a few things. Below are a few examples of configurations we will set as we get started with Git:\n\nour name and email address\nand that we want to use these settings globally (i.e. for every project).\n\nOn a command line, Git commands are written as git verb options, where verb is what we actually want to do and options is additional optional information which may be needed for the verb.\n\n\nSet user.name & user.email\nIn this workshop, we’ll be working with GitHub, and it’s important to ensure that the name and email address you configure on your local computer matches the one associated with your GitHub account. For most participants, this will be your government email address.\nBelow is an example configuration that we will use to connect your local git instance with GitHub.\nFor Windows users, these will be typed into a Git Bash terminal (search for Git Bash from the search bar to open a new window). For Mac users, these will be typed into the Terminal.\n$ git config --global user.name \"your GitHub account name\" \n$ git config --global user.email \"your_email@gmail.com\"\nIf you are concerned about privacy, please review GitHub’s instructions for keeping your email address private.\n\n\nCheck Global Settings\nThe two commands we just ran only need to be run once. The flag --global tells Git to use the settings for every project on this computer.\nYou can check your settings at any time with:\n$ git config --list\nYou can change your configuration as many times as you want: use the same commands to update your name or email address.\n\n\nAccess Git Help and Manual\nIf you forget a git command, you can access a list of available commands by appending a -h. You can access the Git manual for a command by appending --help :\n$ git config -h\n$ git config --help\nWhile viewing the manual, you may see : near the cursor at the bottom of the screen. This is a prompt waiting for further commands such as Q, which you can use to exit the manual."
+  },
+  {
+    "objectID": "01-github-collaboration-workflows.html#refresher-on-key-concepts-with-version-control-10-mins",
+    "href": "01-github-collaboration-workflows.html#refresher-on-key-concepts-with-version-control-10-mins",
+    "title": "GitHub Collaboration Workflows",
+    "section": "Refresher on key concepts with version control (10 mins)",
+    "text": "Refresher on key concepts with version control (10 mins)\n\nActivity: Make your own copy of a repo (clone)",
+    "crumbs": [
+      "Workshop 1. GitHub Collaboration Workflows"
+    ]
+  },
+  {
+    "objectID": "01-github-collaboration-workflows.html#tracking-changes-20-mins",
+    "href": "01-github-collaboration-workflows.html#tracking-changes-20-mins",
+    "title": "GitHub Collaboration Workflows",
+    "section": "Tracking changes (20 mins)",
+    "text": "Tracking changes (20 mins)\n\nActivity: Make a change to this site (commit)",
+    "crumbs": [
+      "Workshop 1. GitHub Collaboration Workflows"
+    ]
+  },
+  {
+    "objectID": "01-github-collaboration-workflows.html#collaboration-on-github-20-mins",
+    "href": "01-github-collaboration-workflows.html#collaboration-on-github-20-mins",
+    "title": "GitHub Collaboration Workflows",
+    "section": "Collaboration on GitHub (20 mins)",
+    "text": "Collaboration on GitHub (20 mins)\n\nActivity: Push your change back to the main site (push and pull request)",
+    "crumbs": [
+      "Workshop 1. GitHub Collaboration Workflows"
+    ]
   }
 ]
