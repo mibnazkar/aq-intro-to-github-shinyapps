@@ -86,6 +86,29 @@ Now that we each have a copy of this site, we are going to make a change! (First
 So, now, on your computer, make a new page for this website in the practice area. Add whatever you want then save it. 
 Next, you'll need to commit that change and `push` (or publish / send it) so we all can see.
 
+```{=html}
+<div class="accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <strong>Hint</strong>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+        <ol>
+          <li>Open RStudio, VS Code or your preferred editor, markdown files are like text files so you could use notepad if you want</li>
+          <li>Create a new file in the <code>practice</code> folder, it should end in <code>.qmd</code> and needs to have the <code>---</code> section at the top. (You could make a copy of one of the files that are there)</li>
+          <li>Make your edits and save</li>
+          <li>When you are ready, select the file you changed, commit it (you will need to add a message), and push it</li>          
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+
 :::{.callout-note}
 ## Resources used
 
@@ -105,7 +128,30 @@ Git and GitHub give us powerful collaboration tools we can use to manage all the
 #### **Activity**: Make a change to another page on a branch and change it back to the main site (pull request)
 :::
 
-Finally, lets make an edit to someone elses page on a new `branch` and use the collaboration tools to review and merge those changes (and resolve conflicts!)
+Finally, lets make an edit to someone elses page on a new `branch` and use the collaboration tools to review and merge those changes (and resolve conflicts!).
+
+```{=html}
+<div class="accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <strong>Hint</strong>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+        <ol>
+          <li>First you have to make a new <code>branch</code> give it a name that someone else is not likely to use, like your name</li>
+          <li>Open and edit an existing file in the <code>practice</code> folder</li>
+          <li>Make your edits and save</li>
+          <li>When you are ready, select the file you changed, commit it (you will need to add a message), and push it. There will be an extra step to set up the branch in the repository we are all using depending on your software</li>          
+          <li>Then go to GitHub.com and go to the [pull request tab](https://github.com/dawnbcgov/aq-intro-to-github-shinyapps/pulls)</li> Select your branch to "compare" with the main branch and then the button create pull request        
+      </ol>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 :::{.callout-note}
 ## Resources used
