@@ -1,0 +1,11 @@
+---
+title: "Henry's practice page"
+author: Henry Ngo
+date: 2025-01-30
+---
+
+Henry's practice page
+
+## A sub section
+
+Hello world
