@@ -14,11 +14,11 @@ website:
       - section: "Resources"
         contents:
         - text: "Preparation and installation instructions"
-          href: ./preparation/
+          href: preparation/
         - text: "Markdown Reference"
-          href: ./preparation/markdown-reference.qmd
-      - text: "Practice"
-        href: ./practice/        
+          href: preparation/markdown-reference.qmd
+      - section: "Practice"
+        contents: practice/*      
 
 format:
   html:

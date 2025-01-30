@@ -4,25 +4,111 @@ title: "GitHub Collaboration Workflows"
 
 ## Welcome & Setup Check (10 mins)
 
+**Learning Objective:**  Practice key steps for remote code hosting and collaborating in GitHub by using branches, opening pull requests (PRs), reviewing PRs, and merging changes   
 
+:::{.mark}
+#### **Activity**: Make your own copy of a repo (`clone`) 
+:::
 
-#### **Activity**: 
+We are going to use the repository <https://github.com/dawnbcgov/aq-intro-to-github-shinyapps> that hosts this website for practice today.
 
+Go ahead and make a copy of the repository with all the files for (or using git terminology "`clone`") this website to your local machine.
+
+```{=html}
+<div class="accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <strong>Hint</strong>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+        <ol>
+          <li>Find the URL or address of the repository you want to make a local copy of on GitHub (in this case <code>https://github.com/dawnbcgov/aq-intro-to-github-shinyapps.git</code> (how you clone via GitHub desktop) or <code>git@github.com:dawnbcgov/aq-intro-to-github-shinyapps.git</code> (which is how to clone via cli)) </li>
+          <li>If you are using GitHub Desktop, go to File > Clone repository </li>
+          <li>Or, if you are using the <code>git</code> cli, use Git Bash and the command <code>git clone <url></code> where the <code><url></code> is the address</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+:::{.callout-note}
+## Resources used
+
+- [Cloning and forking repositories from GitHub Desktop](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop)
+- [Git Basics - Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+:::
 
 ## Refresher on key concepts with version control  (10 mins)
 
+- Key concepts we want to review:
 
-#### **Activity**: Make your own copy of a repo (clone) 
+#### Version Control 
+
+Sequential changes:
+
+![](https://bcgov.github.io/ds-intro-to-git/materials/images/what-is-vc-1.png)
+
+The power of git and similar version control systems: different versions can be saved, conflicts resolved, and then merged together:
+
+![](https://bcgov.github.io/ds-intro-to-git/materials/images/what-is-vc-2.png)
+
+#### Remote Code Hosting and GitHub
+
+![](https://bcgov.github.io/ds-intro-to-git/materials/images/git-gh-collab2.png)
+
+#### Branches
+
+![](https://docs.github.com/assets/cb-2058/mw-1440/images/help/branches/pr-retargeting-diagram1.webp)
+
+![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*e6EkEBIDZcOmlwPqCnsJKg.jpeg)
+
+:::{.callout-note}
+## Resources used
+
+- BC Stats: [Introduction to Version Control with Git & GitHub > What is Version Control](https://bcgov.github.io/ds-intro-to-git/materials/01-what-is-vc.html)
+- BC Stats: [Introduction to Version Control with Git & GitHub > Remote Code Hosting and GitHub](https://bcgov.github.io/ds-intro-to-git/materials/03-remote-hosting.html)
+- GitHub: [About Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
+:::
 
 
 ## Tracking changes (20 mins)
 
+:::{.mark}
+#### **Activity**: Make a change to this site (commit and push)
+:::
 
-#### **Activity**: Make a change to this site (commit)
+Now that we each have a copy of this site, we are going to make a change! (First a micro crash course on quarto and markdown)
+
+So, now, on your computer, make a new page for this website in the practice area. Add whatever you want then save it. 
+Next, you'll need to commit that change and `push` (or publish / send it) so we all can see.
+
+:::{.callout-note}
+## Resources used
+
+- Software Carpentry: [Version Control with Git](https://swcarpentry.github.io/git-novice/) (Episode: 4. Tracking changes)
+:::
 
 
 ## Collaboration on GitHub (20 mins)
 
+We've all been working from the `main` branch, but that can be risky for a many reasons.
 
-#### **Activity**: Push your change back to the main site (push and pull request)
+Just a couple: we might make a mistake while we're working and if we just keep updating the authoritative copy we could miss it. second, two people might change the same file and then we need a process to resolve that conflict.
 
+Git and GitHub give us powerful collaboration tools we can use to manage all these processes! 
+
+:::{.mark}
+#### **Activity**: Make a change to another page on a branch and change it back to the main site (pull request)
+:::
+
+Finally, lets make an edit to someone elses page on a new `branch` and use the collaboration tools to review and merge those changes (and resolve conflicts!)
+
+:::{.callout-note}
+## Resources used
+
+- Software Carpentry: [Version Control with Git](https://swcarpentry.github.io/git-novice/08-collab.html) (Episode: 8. Collaborating and Episode 9. Conflicts)
+:::
