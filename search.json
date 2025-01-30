@@ -177,7 +177,32 @@
     "href": "practice/index.html",
     "title": "Practice Area",
     "section": "",
-    "text": "This is the practice area we will use for making PRs, commits, and changes collaboratively."
+    "text": "This is the practice area we will use for making PRs, commits, and changes collaboratively.",
+    "crumbs": [
+      "Practice"
+    ]
+  },
+  {
+    "objectID": "practice/another.html",
+    "href": "practice/another.html",
+    "title": "Another Page",
+    "section": "",
+    "text": "Here is another page!",
+    "crumbs": [
+      "Practice",
+      "Another Page"
+    ]
+  },
+  {
+    "objectID": "practice/another.html#with-a-sub-section",
+    "href": "practice/another.html#with-a-sub-section",
+    "title": "Another Page",
+    "section": "With a sub section",
+    "text": "With a sub section\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nFirst ordered list item\nAnother item\nActual numbers don’t matter, just that it’s a number\n\nOrdered sub-list\n\nAnd another item.",
+    "crumbs": [
+      "Practice",
+      "Another Page"
+    ]
   },
   {
     "objectID": "preparation/index.html",
@@ -208,11 +233,31 @@
     "text": "Configure Git\n\nGit Set Up\nWhen we use Git on a new computer for the first time, we need to configure a few things. Below are a few examples of configurations we will set as we get started with Git:\n\nour name and email address\nand that we want to use these settings globally (i.e. for every project).\n\nOn a command line, Git commands are written as git verb options, where verb is what we actually want to do and options is additional optional information which may be needed for the verb.\n\n\nSet user.name & user.email\nIn this workshop, we’ll be working with GitHub, and it’s important to ensure that the name and email address you configure on your local computer matches the one associated with your GitHub account. For most participants, this will be your government email address.\nBelow is an example configuration that we will use to connect your local git instance with GitHub.\nFor Windows users, these will be typed into a Git Bash terminal (search for Git Bash from the search bar to open a new window). For Mac users, these will be typed into the Terminal.\n$ git config --global user.name \"your GitHub account name\" \n$ git config --global user.email \"your_email@gmail.com\"\nIf you are concerned about privacy, please review GitHub’s instructions for keeping your email address private.\n\n\nCheck Global Settings\nThe two commands we just ran only need to be run once. The flag --global tells Git to use the settings for every project on this computer.\nYou can check your settings at any time with:\n$ git config --list\nYou can change your configuration as many times as you want: use the same commands to update your name or email address.\n\n\nAccess Git Help and Manual\nIf you forget a git command, you can access a list of available commands by appending a -h. You can access the Git manual for a command by appending --help :\n$ git config -h\n$ git config --help\nWhile viewing the manual, you may see : near the cursor at the bottom of the screen. This is a prompt waiting for further commands such as Q, which you can use to exit the manual."
   },
   {
+    "objectID": "01-github-collaboration-workflows.html",
+    "href": "01-github-collaboration-workflows.html",
+    "title": "GitHub Collaboration Workflows",
+    "section": "",
+    "text": "Learning Objective: Practice key steps for remote code hosting and collaborating in GitHub by using branches, opening pull requests (PRs), reviewing PRs, and merging changes\n\n\n\nWe are going to use the repository https://github.com/dawnbcgov/aq-intro-to-github-shinyapps that hosts this website for practice today.\nGo ahead and make a copy of the repository with all the files for (or using git terminology “clone”) this website to your local machine.\n\n  \n    \n    \n      \n        \n          Find the URL or address of the repository you want to make a local copy of on GitHub (in this case https://github.com/dawnbcgov/aq-intro-to-github-shinyapps.git (how you clone via GitHub desktop) or git@github.com:dawnbcgov/aq-intro-to-github-shinyapps.git (which is how to clone via cli)) \n          If you are using GitHub Desktop, go to File &gt; Clone repository \n          Or, if you are using the git cli, use Git Bash and the command git clone  where the  is the address\n        \n      \n    \n  \n\n\n\n\n\n\n\nResources used\n\n\n\n\nCloning and forking repositories from GitHub Desktop\nGit Basics - Getting a Git Repository",
+    "crumbs": [
+      "Workshop 1. GitHub Collaboration Workflows"
+    ]
+  },
+  {
+    "objectID": "01-github-collaboration-workflows.html#welcome-setup-check-10-mins",
+    "href": "01-github-collaboration-workflows.html#welcome-setup-check-10-mins",
+    "title": "GitHub Collaboration Workflows",
+    "section": "",
+    "text": "Learning Objective: Practice key steps for remote code hosting and collaborating in GitHub by using branches, opening pull requests (PRs), reviewing PRs, and merging changes\n\n\n\nWe are going to use the repository https://github.com/dawnbcgov/aq-intro-to-github-shinyapps that hosts this website for practice today.\nGo ahead and make a copy of the repository with all the files for (or using git terminology “clone”) this website to your local machine.\n\n  \n    \n    \n      \n        \n          Find the URL or address of the repository you want to make a local copy of on GitHub (in this case https://github.com/dawnbcgov/aq-intro-to-github-shinyapps.git (how you clone via GitHub desktop) or git@github.com:dawnbcgov/aq-intro-to-github-shinyapps.git (which is how to clone via cli)) \n          If you are using GitHub Desktop, go to File &gt; Clone repository \n          Or, if you are using the git cli, use Git Bash and the command git clone  where the  is the address\n        \n      \n    \n  \n\n\n\n\n\n\n\nResources used\n\n\n\n\nCloning and forking repositories from GitHub Desktop\nGit Basics - Getting a Git Repository",
+    "crumbs": [
+      "Workshop 1. GitHub Collaboration Workflows"
+    ]
+  },
+  {
     "objectID": "01-github-collaboration-workflows.html#refresher-on-key-concepts-with-version-control-10-mins",
     "href": "01-github-collaboration-workflows.html#refresher-on-key-concepts-with-version-control-10-mins",
     "title": "GitHub Collaboration Workflows",
     "section": "Refresher on key concepts with version control (10 mins)",
-    "text": "Refresher on key concepts with version control (10 mins)\n\nActivity: Make your own copy of a repo (clone)",
+    "text": "Refresher on key concepts with version control (10 mins)\n\nKey concepts we want to review:\n\n\nVersion Control\nSequential changes:\n\nThe power of git and similar version control systems: different versions can be saved, conflicts resolved, and then merged together:\n\n\n\nRemote Code Hosting and GitHub\n\n\n\nBranches\n\n\n\n\n\n\n\n\nResources used\n\n\n\n\nBC Stats: Introduction to Version Control with Git & GitHub &gt; What is Version Control\nBC Stats: Introduction to Version Control with Git & GitHub &gt; Remote Code Hosting and GitHub\nGitHub: About Branches",
     "crumbs": [
       "Workshop 1. GitHub Collaboration Workflows"
     ]
@@ -222,7 +267,7 @@
     "href": "01-github-collaboration-workflows.html#tracking-changes-20-mins",
     "title": "GitHub Collaboration Workflows",
     "section": "Tracking changes (20 mins)",
-    "text": "Tracking changes (20 mins)\n\nActivity: Make a change to this site (commit)",
+    "text": "Tracking changes (20 mins)\n\nActivity: Make a change to this site (commit and push)\n\nNow that we each have a copy of this site, we are going to make a change! (First a micro crash course on quarto and markdown)\nSo, now, on your computer, make a new page for this website in the practice area. Add whatever you want then save it. Next, you’ll need to commit that change and push (or publish / send it) so we all can see.\n\n\n\n\n\n\nResources used\n\n\n\n\nSoftware Carpentry: Version Control with Git (Episode: 4. Tracking changes)",
     "crumbs": [
       "Workshop 1. GitHub Collaboration Workflows"
     ]
@@ -232,7 +277,7 @@
     "href": "01-github-collaboration-workflows.html#collaboration-on-github-20-mins",
     "title": "GitHub Collaboration Workflows",
     "section": "Collaboration on GitHub (20 mins)",
-    "text": "Collaboration on GitHub (20 mins)\n\nActivity: Push your change back to the main site (push and pull request)",
+    "text": "Collaboration on GitHub (20 mins)\nWe’ve all been working from the main branch, but that can be risky for a many reasons.\nJust a couple: we might make a mistake while we’re working and if we just keep updating the authoritative copy we could miss it. second, two people might change the same file and then we need a process to resolve that conflict.\nGit and GitHub give us powerful collaboration tools we can use to manage all these processes!\n\nActivity: Make a change to another page on a branch and change it back to the main site (pull request)\n\nFinally, lets make an edit to someone elses page on a new branch and use the collaboration tools to review and merge those changes (and resolve conflicts!)\n\n\n\n\n\n\nResources used\n\n\n\n\nSoftware Carpentry: Version Control with Git (Episode: 8. Collaborating and Episode 9. Conflicts)",
     "crumbs": [
       "Workshop 1. GitHub Collaboration Workflows"
     ]
