@@ -173,6 +173,28 @@
     ]
   },
   {
+    "objectID": "practice/henry.html",
+    "href": "practice/henry.html",
+    "title": "Henry’s practice page",
+    "section": "",
+    "text": "Henry’s practice page",
+    "crumbs": [
+      "Practice",
+      "Henry's practice page"
+    ]
+  },
+  {
+    "objectID": "practice/henry.html#a-sub-section",
+    "href": "practice/henry.html#a-sub-section",
+    "title": "Henry’s practice page",
+    "section": "A sub section",
+    "text": "A sub section\nHello world",
+    "crumbs": [
+      "Practice",
+      "Henry's practice page"
+    ]
+  },
+  {
     "objectID": "practice/index.html",
     "href": "practice/index.html",
     "title": "Practice Area",
